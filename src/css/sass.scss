@@ -1,0 +1,220 @@
+  $bg : #040404;
+  $ff : 'Montserrat';
+  $primary : #dd5dbd;
+  $secondary : #fa0150;
+  $success : #56e364;
+  $light : #f4f4f4;
+
+body{
+  background-color:$bg;
+  margin:auto;
+  font-family:$ff;
+  color:$light;
+  font-size:80%;
+  a#ribbon img{
+  position: fixed;
+  width:15%;
+  max-width:400px;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  cursor: pointer;
+  }
+}
+
+.top{
+  @extend .container;
+  margin: 4% auto 4% auto;
+
+  p{
+    font-size: 130%;
+  }
+}
+
+.pink{
+  color:$primary;
+}
+
+.center{
+  text-align:center;
+}
+hr{
+  margin-bottom: 0;
+}
+
+/* LINKS */
+a, a:visited {
+  color:$light;
+  text-decoration:none;
+  font-weight:bold;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color:$primary;
+}
+
+
+a.pink, a.pink:visited{
+  color:$primary;
+  text-transform: none;
+
+}
+
+a:active{
+  color:$secondary;
+}
+
+h1{
+  padding-top:7%;
+  opacity:1;
+  margin:0 auto;
+  line-height: 1.7;
+  font-size:200%;
+}
+
+h2.logo{
+  margin:0 auto;
+  display: block;
+  background-image:url('../../img/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width:800px;
+  text-indent: -10000px;
+  height:473px;
+  margin-bottom: 50px;
+}
+
+section#needles{
+  @extend .container;
+  max-height:500px;
+  min-height: 300px;
+  background:url('../../img/needles.png');
+  background-size: cover;
+  background-position: center center;
+  text-align:center;
+
+  .dotted{
+    @extend .pink;
+    border-bottom: 1px dotted $primary;
+  }
+}
+
+#map{
+  @extend .container;
+  height:500px;
+  box-shadow: 2px 100px 250px 2px rgba($primary, 0.1);
+
+}
+
+footer{
+  text-align:center;
+
+
+  .fa{
+    @extend .pink;
+    font-size:36px;
+    padding:10px;
+    margin:10px;
+  }
+  .fa:hover{
+    color:$secondary;
+  }
+
+}
+
+.container{
+  width:100%;
+  margin:0;
+  padding:0;
+}
+section#contact{
+  @extend .container;
+  padding-top:50px;
+  padding-bottom: 75px;
+  text-align:center;
+
+  h1{
+    margin-bottom: 50px;
+  }
+
+  label{
+    visibility: hidden;
+    display: none;
+  }
+
+  textarea:focus,
+  input:focus{
+      outline: none;
+      text-transform: none;
+      color:white;
+  }
+  form{
+    width:960px;
+    max-width:90%;
+    margin:0 auto;
+  }
+  input, textarea{
+    background: $bg;
+    color:$secondary;
+    border-radius: 5px;
+    border:1px solid $primary;
+    padding:12px;
+    margin:10px;
+    font-size:14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width:918px;
+    max-width:90%;
+  }
+  button{
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin:10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background:$bg;
+    color:$primary;
+    border:1px solid $primary;
+    font-weight:bold;
+  }
+  button:hover{
+    color:$secondary;
+    border-color:$secondary;
+  }
+}
+
+
+::placeholder{
+  color:$primary;
+  text-transform: lowercase;
+  font-weight: normal;
+}
+
+
+
+::selection{
+  color: $secondary;
+  background-color: white;
+  opacity:1;
+}
+
+
+
+
+.notification, .cash {
+  height: auto;
+  padding: 10px;
+  border-bottom: #0a0;
+  background: $success;
+  box-shadow: 0px 0px 2px rgba(0,0,0,0.35);
+  text-align: center;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  font-size: 16px;
+  color: $secondary;
+  z-index:99999999;
+  display: none;
+}
+rwar
