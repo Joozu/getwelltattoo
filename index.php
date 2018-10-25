@@ -7,7 +7,27 @@
 <html>
 
   <head>
-
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "TattooParlor",
+"name": "The Gettwell Giftshop",
+"url":"http://getwelltattoo.com/",
+"image": "http://getwelltattoo.com/src/img/logo.png",
+"logo": "http://getwelltattoo.com/src/img/logo.png",
+"openingHours": "Tu,We,Th,Fr,Sa 11:00-18:00",
+"priceRange": "$$$",
+"currenciesAccepted": "DKK",
+"paymentAccepted":"Cash, Credit Card",
+"address": {
+    "@type": "PostalAddress",
+    "addressLocality": "København K",
+    "postalCode": "1116",
+    "streetAddress": "Møntergade 4" },
+"email": "mailto:shop@getwelltattoo.com",
+"telephone": "+4551880838"
+}
+</script>
     <title>
       The GetWell GiftShop - Tattoo parlor in the heart of Copenhagen
     </title>
